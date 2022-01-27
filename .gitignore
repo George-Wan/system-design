@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ShortURL/ShortURL/bin/Debug/net5.0
+/ShortURL/UnitTest/bin/Debug/net5.0
+/ShortURL/UnitTest/obj
+/ShortURL/ShortURL/obj
