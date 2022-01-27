@@ -1,0 +1,11 @@
+C:\github\ShortURL\Service\bin\Debug\net5.0\ShortURL.Service.deps.json
+C:\github\ShortURL\Service\bin\Debug\net5.0\ShortURL.Service.dll
+C:\github\ShortURL\Service\bin\Debug\net5.0\ref\ShortURL.Service.dll
+C:\github\ShortURL\Service\bin\Debug\net5.0\ShortURL.Service.pdb
+C:\github\ShortURL\Service\obj\Debug\net5.0\ShortURL.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\ShortURL\Service\obj\Debug\net5.0\ShortURL.Service.AssemblyInfoInputs.cache
+C:\github\ShortURL\Service\obj\Debug\net5.0\ShortURL.Service.AssemblyInfo.cs
+C:\github\ShortURL\Service\obj\Debug\net5.0\ShortURL.Service.csproj.CoreCompileInputs.cache
+C:\github\ShortURL\Service\obj\Debug\net5.0\ShortURL.Service.dll
+C:\github\ShortURL\Service\obj\Debug\net5.0\ref\ShortURL.Service.dll
+C:\github\ShortURL\Service\obj\Debug\net5.0\ShortURL.Service.pdb
