@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using ShortURLWebAPI.Services;
 
 namespace ShortURL.Controllers
 {
@@ -11,29 +8,26 @@ namespace ShortURL.Controllers
     [Route("[controller]")]
     public class ShortURLController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
+      
         private readonly ILogger<ShortURLController> _logger;
+        private readonly IShortURLService _shortURLService;
 
-        public ShortURLController(ILogger<ShortURLController> logger)
+        public ShortURLController(ILogger<ShortURLController> logger, IShortURLService shortURLService)
         {
             _logger = logger;
+            _shortURLService = shortURLService;
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public string Get(string shortURL)
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            return _shortURLService.Dncode(shortURL);
+        }
+
+        [HttpPost]
+        public string Shorten([FromBody]string longURL)
+        {
+            return _shortURLService.Encode(longURL);
         }
     }
 }
