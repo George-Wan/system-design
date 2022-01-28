@@ -5,6 +5,6 @@ namespace TinyUrl.Service
     public interface ITinyUrlService
     {
         public string Encode(string longURL);
-        public string Dncode(string shortURL);
+        public string Decode(string shortURL);
     }
 }

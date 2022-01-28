@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using TinyUrl.Data;
 using TinyUrl.Service;
 
 namespace TinyUrl.WebAPI
@@ -26,6 +27,7 @@ namespace TinyUrl.WebAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TinyUrl.WebAPI", Version = "v1" });
             });
+            services.AddSingleton<ITinyUrlDataAccess, TinyUrlDataAccess>();
             services.AddScoped<ITinyUrlService, TinyUrlService>();
         }
 

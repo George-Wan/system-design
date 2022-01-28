@@ -15,13 +15,13 @@ namespace TinyUrl.WebAPI.Controllers
         public TinyUrlController(ILogger<TinyUrlController> logger, ITinyUrlService tinyUrlService)
         {
             _logger = logger;
-            _tinyUrlService =_tinyUrlService;
+            _tinyUrlService = tinyUrlService;
         }
 
         [HttpGet]
         public string Get(string shortURL)
         {
-            return _tinyUrlService.Dncode(shortURL);
+            return _tinyUrlService.Decode(shortURL);
         }
 
         [HttpPost]

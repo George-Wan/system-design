@@ -1,17 +1,25 @@
 ﻿using System;
+using TinyUrl.Data;
 
 namespace TinyUrl.Service
 {
     public class TinyUrlService : ITinyUrlService
     {
-        public string Dncode(string shortURL)
+        private readonly ITinyUrlDataAccess _tinyUrlDataAccess;
+        public TinyUrlService(ITinyUrlDataAccess tinyUrlDataAccess)
         {
-            throw new NotImplementedException();
+            _tinyUrlDataAccess = tinyUrlDataAccess;
+        }
+        public string Decode(string shortURL)
+        {
+            _tinyUrlDataAccess.doSomething();
+            return "ss";
         }
 
         public string Encode(string longURL)
         {
-            throw new NotImplementedException();
+            _tinyUrlDataAccess.doSomething();
+            return "bb";
         }
     }
 }
