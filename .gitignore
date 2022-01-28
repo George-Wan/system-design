@@ -7,3 +7,11 @@
 /ShortURL/UnitTest/obj
 /ShortURL/ShortURL/obj
 /ShortURL/Service/obj/Debug/net5.0
+/TinyUrl/TinyUrl.Data/bin/Debug/net5.0
+/TinyUrl/TinyUrl.Data/obj
+/TinyUrl/TinyUrl.Service/bin/Debug/net5.0
+/TinyUrl/TinyUrl.Service/obj
+/TinyUrl/TinyUrl.Test/bin/Debug/net5.0
+/TinyUrl/TinyUrl.Test/obj
+/TinyUrl/TinyUrl.WebAPI/bin/Debug/net5.0
+/TinyUrl/TinyUrl.WebAPI/obj
