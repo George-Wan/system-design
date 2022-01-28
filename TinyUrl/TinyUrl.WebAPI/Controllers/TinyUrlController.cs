@@ -11,7 +11,7 @@ namespace TinyUrl.WebAPI.Controllers
 
         private readonly ILogger<TinyUrlController> _logger;
         private readonly ITinyUrlService _tinyUrlService;
-
+        private readonly string baseUrl =  "mytinyurl.com/";
         public TinyUrlController(ILogger<TinyUrlController> logger, ITinyUrlService tinyUrlService)
         {
             _logger = logger;
@@ -21,13 +21,13 @@ namespace TinyUrl.WebAPI.Controllers
         [HttpGet]
         public string Get(string shortURL)
         {
-            return _tinyUrlService.Decode(shortURL);
+            return _tinyUrlService.ShortToLong(shortURL.Replace(baseUrl, ""));
         }
 
         [HttpPost]
         public string Shorten([FromBody] string longURL)
         {
-            return _tinyUrlService.Encode(longURL);
+            return baseUrl + _tinyUrlService.LongToShort(longURL);
         }
     }
 }

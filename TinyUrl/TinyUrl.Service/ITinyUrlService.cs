@@ -4,7 +4,7 @@ namespace TinyUrl.Service
 {
     public interface ITinyUrlService
     {
-        public string Encode(string longURL);
-        public string Decode(string shortURL);
+        public string LongToShort(string longURL);
+        public string ShortToLong(string shortURL);
     }
 }
