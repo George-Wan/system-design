@@ -2,7 +2,7 @@
 {
     public interface ITinyUrlService
     {
-        public string LongToShort(string longURL);
-        public string ShortToLong(string shortURL);
+        public string LongToTiny(string longURL);
+        public string TinyToLong(string shortURL);
     }
 }

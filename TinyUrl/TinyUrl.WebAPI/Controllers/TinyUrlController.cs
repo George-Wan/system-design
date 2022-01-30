@@ -21,13 +21,13 @@ namespace TinyUrl.WebAPI.Controllers
         [HttpGet]
         public string Get(string shortURL)
         {
-            return _tinyUrlService.ShortToLong(shortURL.Replace(baseUrl, ""));
+            return _tinyUrlService.TinyToLong(shortURL.Replace(baseUrl, ""));
         }
 
         [HttpPost]
         public string Shorten(string longURL)
         {
-            return baseUrl + _tinyUrlService.LongToShort(longURL);
+            return baseUrl + _tinyUrlService.LongToTiny(longURL);
         }
     }
 }

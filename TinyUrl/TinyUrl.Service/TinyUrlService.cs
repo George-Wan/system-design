@@ -11,7 +11,7 @@ namespace TinyUrl.Service
             _tinyUrlDataAccess = tinyUrlDataAccess;
         }
 
-        public string ShortToLong(string tinyURL)
+        public string TinyToLong(string tinyURL)
         {
             int id = 0;
             foreach (var s in tinyURL)
@@ -22,7 +22,7 @@ namespace TinyUrl.Service
             return longUrl;
         }
 
-        public string LongToShort(string longURL)
+        public string LongToTiny(string longURL)
         {
             int lastInsertedId = _tinyUrlDataAccess.CreateTinyUrl(longURL);
             return IdToTinyUrl(lastInsertedId);
