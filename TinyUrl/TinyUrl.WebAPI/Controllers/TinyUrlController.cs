@@ -25,7 +25,7 @@ namespace TinyUrl.WebAPI.Controllers
         }
 
         [HttpPost]
-        public string Shorten([FromBody] string longURL)
+        public string Shorten(string longURL)
         {
             return baseUrl + _tinyUrlService.LongToShort(longURL);
         }

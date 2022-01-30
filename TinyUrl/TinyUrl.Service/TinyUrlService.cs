@@ -10,25 +10,25 @@ namespace TinyUrl.Service
         {
             _tinyUrlDataAccess = tinyUrlDataAccess;
         }
-        public string ShortToLong(string shortURL)
+
+        public string ShortToLong(string tinyURL)
         {
             int id = 0;
-            foreach (var s in shortURL)
+            foreach (var s in tinyURL)
             {
                 id = id * 62 + base62.IndexOf(s);
             }
-            _tinyUrlDataAccess.doSomething();
-            return "ss";
+            string longUrl = _tinyUrlDataAccess.GetLongUrl(id);
+            return longUrl;
         }
 
         public string LongToShort(string longURL)
         {
-            _tinyUrlDataAccess.doSomething();
-            int id = 100;
-            return IdToUrl(id);
+            int lastInsertedId = _tinyUrlDataAccess.CreateTinyUrl(longURL);
+            return IdToTinyUrl(lastInsertedId);
         }
 
-        private string IdToUrl(int id) 
+        private string IdToTinyUrl(int id) 
         {
             
             string tinyUrl = "";
@@ -39,7 +39,7 @@ namespace TinyUrl.Service
             }
 
             while (tinyUrl.Length < 6) {
-                tinyUrl += "0";
+                tinyUrl = "0" + tinyUrl;
             }
 
             return tinyUrl;

@@ -28,7 +28,7 @@ namespace TinyUrl.WebAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TinyUrl.WebAPI", Version = "v1" });
             });
             services.AddSingleton<ITinyUrlDataAccess, TinyUrlDataAccess>();
-            services.AddScoped<ITinyUrlService, TinyUrlService>();
+            services.AddSingleton<ITinyUrlService, TinyUrlService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

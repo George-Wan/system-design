@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TinyUrl.Service
+﻿namespace TinyUrl.Service
 {
     public interface ITinyUrlService
     {
