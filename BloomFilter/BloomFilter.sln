@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomFilter.Service", "BloomFilter.Service\BloomFilter.Service.csproj", "{83DE92ED-3C09-4354-8E9D-A0D5E827AC26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83DE92ED-3C09-4354-8E9D-A0D5E827AC26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DE92ED-3C09-4354-8E9D-A0D5E827AC26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DE92ED-3C09-4354-8E9D-A0D5E827AC26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DE92ED-3C09-4354-8E9D-A0D5E827AC26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F407DFD-C018-419D-9271-02BE0F7CD94F}
+	EndGlobalSection
+EndGlobal
