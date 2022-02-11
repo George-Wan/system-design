@@ -10,3 +10,7 @@ A tiny url is NOT stored in database. Since a tiny url is just a string of 6 cha
 
 ## Bloom filter
 A Bloom filter is a data structure designed to check, rapidly and memory-efficiently, whether an element is present in a set. The POC is a workable solution to check if a user name has been regeristed with a website. 
+
+
+## Autocomplete
+Autocomplete is a very common web feature which can predict the rest of a word or a phrase a user is typing. The data structure used to implement this featuer is called Trie or Prefix tree. In this feature implementation, the data structure can support the user input prediction of all lower cases words.
