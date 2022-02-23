@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TinyUrl",
+    "\\TinyUrl\\TinyUrl.Service"
   ],
+  "SelectedNode": "\\TinyUrl",
   "PreviewInSolutionExplorer": false
 }
